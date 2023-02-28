@@ -43,5 +43,6 @@ for icon in range(0, len(icons), 5):
   table.add_row([original, _64, _24, _20,  _16, _12])
 
 table.align = "l"
+print(table)
 with open('results_standard.csv', 'w', newline='') as f_output:
     f_output.write(table.get_csv_string())
